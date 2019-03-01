@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <script src="main.js"></script>
+    </head>
+
+    <body>
+        
+        <form>
+                <br>
+                <label for="nume">Nume :<br></label>
+                <input type="text" name="nume" placeholder="Mitrutz" required><br>
+    
+                <br>
+                <label for="prenume">Prenume :<br></label>
+                <input type="text" name="prenume" placeholder="Mateias" required><br>
+
+                <br>
+                <label for="CNP" required>CNP :<br></label>
+                <input type="number" maxlength="13" name="CNP"><br>
+
+                <br>
+                <label for="nastere" required>Data Nastere :</label>
+                <input type="date" name="nastere" min="11.30.1988" max="02.28.2019"><br>
+
+
+                <br>
+                <label for="telefon" required>Telefon :</label>
+                <input type="number" name="telefon"><br>
+
+                <br>
+                <p>Platiti cu cardul ?</p>
+                <label for="card" required>Da</label>
+                <input type="radio" name="card">
+                <label for="card" required>Nu</label>
+                <input type="radio" name="card"><br>
+
+                <p>Adresa :</p>
+                <label for="localitate">Localitate :</label>
+                <select id="localitate">
+                    <option value="">Alegeti Localitatea</option>
+                    <option value="dog">Iasi</option>
+                    <option value="cat">Arad</option>
+                    <option value="hamster">Timisoara</option>
+                </select>
+
+
+                
+                <br>
+                <input type="submit" value="Trimite"><br>
+
+                
+
+        </form>
+
+    </body>
+
+</html>
