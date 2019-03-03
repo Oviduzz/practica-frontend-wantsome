@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formular 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <form>
+        <br>
+        <label for="fullName">Full name* :<br></label>
+        <input type="text" name="fullName" placeholder="FirstName LastName" required><br>
+
+        <br>
+        <label for="email">Email address*:</label><br>
+        <input type="email" id="email" size="30" placeholder="EMAIL_ADDRESS" required><br>
+
+        <br>
+        <label for="package">Select Tour Package* :</label><br>
+        <select id="package" required >
+            <option value="goa" selected>Goa</option>
+        </select><br>
+
+        <br>
+        <label for="nastere" required>Arrival date* :</label><br>
+        <input type="date" name="nastere" min="11.30.1988" max="02.28.2019" required><br>
+
+        <br>
+        <label for="nr-persons" required>Number of persons* :<br></label>
+        <input type="number" name="nr-persons" placeholder="UNKOWN_TYPE" required><br>
+
+        <br>
+        <p>What would you want to avail?*</p>
+        <label for="avail" required>Boarding</label>
+        <input type="checkbox" name="avail"><br>
+        <label for="avail" required>Fooding</label>
+        <input type="checkbox" name="avail"><br>
+        <label for="avail" required>Sight seeing</label>
+        <input type="checkbox" name="avail"><br>
+
+        <br>
+        <label for="coupon">Discount Coupon code :<br></label>
+        <input type="text" name="coupon" placeholder="UNKNOWN_TYPE"><br>
+
+        <br>
+        <p>Terms and conditions*</p>
+        <label for="terms" required>I agree</label>
+        <input type="radio" name="terms">
+        <label for="terms" required>I disagree</label>
+        <input type="radio" name="terms"><br>
+
+        <br>
+        <input type="submit" value="Complete reservation"><br>
+
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formular 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <form>
+        <br>
+        <label for="nume">Nume :<br></label>
+        <input type="text" name="nume" placeholder="Nume" required><br>
+
+        <br>
+        <label for="prenume">Prenume :<br></label>
+        <input type="text" name="prenume" placeholder="Prenume" required><br>
+        
+        <p>Sex</p>
+        <label for="masculin">Masculin</label>
+        <input type="radio" name="masculin">
+        <label for="feminin">Feminin</label>
+        <input type="radio" name="feminin"><br>
+
+        <br>
+        <label for="varsta" required>Varsta :</label>
+        <input type="number" min="18" max="85" value="18" name="varsta"><br>
+
+        <br>
+        <label for="tara">Tara :</label>
+        <select id="tara" >
+            <option value="">Selectati tara</option>
+            <option value="romania" selected>Romania</option>
+            <option value="anglia">Anglia</option>
+            <option value="italia">Italia</option>
+            <option value="franta">Franta</option>
+        </select><br>
+
+        <br>
+        <label for="oras">Orasul :</label>
+        <select id="oras">
+            <option value="">Selectati orasul</option>
+            <option value="iasi" selected>Iasi</option>
+            <option value="brasov">Brasov</option>
+            <option value="galati">Galati</option>
+            <option value="timisoara">Timisoara</option>
+        </select><br>
+
+        <br>
+        <label for="adresa">Adresa :<br></label>
+        <input type="text" name="adresa"><br>
+
+        <br>
+        <label for="cod-postal" required>Cod postal :</label><br>
+        <input type="number" minlength="5" maxlength="5" name="cod-postal"><br>
+
+        <br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" size="30" required><br>
+
+        <br>
+        <label for="mesaj">Mesaj :<br></label>
+        <textarea rows="4" cols="30">
+        </textarea><br>
+
+        <br>
+        <label for="resume">Incarca CV:</label><br>
+        <br>
+        <input type="file" id="resume" name="resume" accept="image/png, image/jpeg"><br>
+
+        <br>
+        <input type="submit" value="Trimite">
+
+        <input type="reset" value="Reset"><br>
+
+    </form>    
+</body>
+
+</html>

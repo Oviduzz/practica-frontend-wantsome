@@ -1,0 +1,101 @@
+<!doctype <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formular 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <form>
+        
+        <label for="site-search">Search for:</label><br>
+        <input type="search" id="site-search" name="q" aria-label="Search through site content" value="chocolate cheesecake recipes" size="30">
+        <button>Search</button><br>
+
+        <br>
+            <font>Match :</font>
+            <input type="radio" name="match">
+            <label for="match">Any word</label>
+            <input type="radio" name="match" checked>
+            <label for="match">All words</label>
+            <input type="radio" name="match">
+            <label for="match">Exact phrase</label>
+            
+            <br>
+            <input type="checkbox" name="alike" checked>
+            <label for="alike">Sound-alike matching</label><br>
+
+            <br>
+            <font>Dated :</font>
+            <input type="radio" name="dated">
+            <label for="dated">
+                    <select id="when" >
+                            <option value="Within the last year" selected>Within the last year</option>
+                    </select>        
+            </label><br>
+        
+            <br>
+            <input type="radio" name="dated" checked>
+            <label for="dated">
+                From: 
+            </label>
+            <select id="month" >
+                <option value="september" selected>September</option>
+            </select>
+            <select id="day" >
+                <option value="8" selected>8</option>
+            </select>
+            ,
+            <select id="year" >
+                <option value="2009" selected>2009</option>
+            </select><br>
+
+            <br>
+            <label for="dated">
+                To: 
+            </label>
+            <select id="month" >
+                <option value="october" selected>October</option>
+            </select>
+            <select id="day" >
+                <option value="18" selected>18</option>
+            </select>
+            ,
+            <select id="year" >
+                <option value="2011" selected>2011</option>
+            </select><br>
+
+        <br>
+        <label for="within">Within:</label>
+        <select id="within" >
+            <option value="Description" selected>Description</option>
+        </select><br>
+        
+        <br>
+        <label for="show">Show:</label>
+        <select id="show" >
+            <option value="10" selected>10</option>
+        </select>
+        results
+        <select id="with" >
+            <option value="with" selected>with</option>
+        </select>
+        summaries<br>
+
+        <br>
+        <label for="sort">Sort by:</label>
+        <select id="sort" >
+            <option value="relevance" selected>relevance</option>
+        </select>  
+
+
+    </form>
+    
+</body>
+</html>
